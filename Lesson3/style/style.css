@@ -1,0 +1,10 @@
+h1 + p {
+    font-size: 10px;
+    color: firebrick;
+    border: 1px solid #000;
+}
+
+
+h1 ~ p {
+    font-size: 50px;
+}

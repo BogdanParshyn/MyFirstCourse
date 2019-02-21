@@ -1,0 +1,93 @@
+.wrapper::before { /*Псевдоселектор - добавляет контент в начало тэга*/
+    content: 'Меню'; /*Обязательный параметр*/
+    
+}
+
+.wrapper::after { /*Псевдоселектор - Добавляет контент в конце тэга*/
+    content: url('gogle.png');
+}
+
+ul li:first-child {
+    /*Псевдоселектор - выбирает 1 элемент зи детей тэга*/
+    color: red;
+}
+
+ul li:last-child {
+    /*Псевдоселектор - выбирает последний элемент из детей тэга*/
+    color: blue;
+}
+
+ul li:nth-child(5){ /*Функция в которую передается целое значение, либо выражение*/
+    color: forestgreen;
+}
+
+ul li:nth-child(odd){ /*Нечетные - Функция в которую передается целое значение, либо выражение*/
+    color: rosybrown;
+}
+
+ul li:nth-child(even){ /*Четные - Функция в которую передается целое значение, либо выражение*/
+    color: darkcyan;
+}
+
+ul li:nth-child(5n){ /*Каждый 5-й в этом случае - Функция в которую передается целое значение, либо выражение. n - это множитель, изначально "0"*/
+    color: tomato;
+}
+
+ul li:nth-child(5n +1){ /*Каждый 5-й + 1 в этом случае - Функция в которую передается целое значение, либо выражение. n - это множитель, изначально "0"*/
+    color: tomato;
+}
+
+ul li:nth-child(5n +1), ul li:nth-child(1){ /*Каждый 5-й + 1 в этом случае - Функция в которую передается целое значение, либо выражение. n - это множитель, изначально "0"*/
+    color: tomato;
+}
+/**/
+
+.descr, .descr2 {
+    font-size: 20px;
+    color: red;
+}
+.descr{
+    text-decoration: underline; /*Подчеркивание*/
+}
+
+.button{
+    text-decoration: none; /**/
+    border: 1px solid black;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px; /*Скругление углов 
+    Форма записи border-radius: 10px; либо border-radius:10px 10px 5px 10px
+    border-left: solid black;
+    */
+    background: firebrick;
+    color: white;
+}
+
+
+/*рассмотреть дома псевдоселекторы*/
+
+.button:hover{/*Событие - наведение на элемент*/
+    opacity: 0.7; /*Прозрачность*/ 
+}
+
+.button:active{ /*Событие - нажатие на элемент*/
+    border: 3px solid black; /**/ 
+}
+
+.button::first-letter{
+    font-size: 30px;
+    font-weight: 700; /*жирность*/
+}
+
+.button::first-letter{ /*Выбирает первую букву в тексте*/
+    font-size: 30px;
+    font-weight: 700; /*жирность*/
+}
+
+.button:focus{
+    color: #000;
+
+}
+
+
+/**/
