@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <table class="t1">
+        <caption>Заголовок</caption>
+        <colgroup><!--Задает цвет столбцов-->
+        </colgroup>
+        <theead>
+            <tr><td>#</td><td>Имя</td><td>Значение</td><td>Возраст</td></tr>
+        </theead>
+        <tbody><!--Это само тело -->
+                <tr><th colspan="2">Заголовок</th></tr><!--colspan показывает, сколько ячеек нужно объеденить, получается есть еще ячейки за ним-->
+                
+                <tr><th>Имя</th><th>Значение</th></tr><!--Это строка с заголовками -->
+                
+                <tr><td>#</td><td>Имя</td><td>Значение</td><td>Возраст</td></tr><!--tr Это строки таблиц. td - єто ячейки строки-->
+                
+                <tr><td class="razbros">1</td><td>2</td><td>3</td><td>4</td></tr>
+                
+                <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+                
+                <tr><td>1</td><td class="razbros">2</td><td>3</td><td>4</td></tr>
+                
+                <tr><td>1</td><td>2</td><td class="razbros">3</td><td>4</td></tr>
+                
+                <tr><td class="razbros" rowspan="2" colspan="2">1</td><td>3</td><td>4</td></tr><!--rowspan - объеденяет столбцы сверху вниз-->
+                
+                <tr><td>3</td><td class="razbros">4</td></tr>                  
+            <tfoot>
+                <tr>
+                    <td colspan="3">Итого:</td><td colspan="1">3 000 000 </td>
+                </tr>
+            </tfoot>
+        </tbody>
+    </table>
+    
+</body>
+</html>

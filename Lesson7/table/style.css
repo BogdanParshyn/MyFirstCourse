@@ -1,0 +1,31 @@
+.t1{
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;/*убирает расстояние между ячейками*/
+    color: #fff;
+    background: #000000;
+}
+
+.t1 caption{
+    background: darkgreen;
+}
+
+.t1 td{
+    border: 1px solid red;
+}
+
+.t1 th{
+    width: 50%;
+}
+
+.t1 tr td:first-child{
+    background: purple;
+}
+
+.t1 tr td:nth-child(2){
+    background: #444;
+}
+
+.t1 tr td.razbros{
+    background: tan;
+}
