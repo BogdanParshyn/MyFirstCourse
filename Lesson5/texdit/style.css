@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400|Taprom&subset=cyrillic');
 
+@font-face {
+    font-family: 'goma_cookie_g_cyrillicregular';
+    src: url('fonts/14646-webfont.woff2') format('woff2'),
+         url('fonts/14646-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 .text{
     width: 800px;
@@ -11,10 +18,12 @@
     letter-spacing: 2px;
     white-space: pre-line; /*допускает только создание одного пробела между словами или буквами. 
     исключение только br./ nowrap, pre-wrap, wrap/ pre-line удаляет лишние пробелы*/
+    
     text-transform: capitalize; /*capitalize, uppercase, lowercase*/
     direction: rtl;
+
     text-decoration: underline ; /* 
-    подчеркивает линией, есть еще похожие: overlineline-through*/ 
+    подчеркивает линией, есть еще похожие: overline, line-through*/ 
     quotes: '&laquo';
     }
 
@@ -43,7 +52,7 @@
     background: radial-gradient(circle at 65% 15%, rgb(221, 207, 14), rgb(49, 28, 139)); /*ширина высота и цвета - 1-й внутренний, а 2-й внешний*/
     /*
     Градусы:
-     to top
+     to top = 0deg
      to right
      to bottom
      to left*/
@@ -55,15 +64,17 @@
 }
 
 .radial{
-        height: 400px;
+    height: 400px;
     border-radius: 15px;
     /*
     Скругляет углы, края
-    border-radius: 15px;
-    border-radius: 15%;
+    border-radius: 15px 15px 15px 15px;
+    border-radius: 50%;
     */
     border-radius: 50%;
-    background: repeating-radial-gradient(circle, #c94365, #b4bd33 50px,#00020a 50px, #465298 100px); /*ширина высота и цвета - 1-й внутренний, а 2-й внешний*/
+    background: repeating-radial-gradient(circle, #972f86, #972f86 10px, #465cdb 10px, #465cdb 30px);
+    background: -o-repeating-radial-gradient(circle, #972f86, #972f86 10px, #465cdb 10px, #465cdb 30px);
+    background: -webkit-repeating-radial-gradient(circle, #972f86, #972f86 10px, #465cdb 10px, #465cdb 30px);
 }
 
 .border-image {
@@ -78,4 +89,5 @@
     text-shadow: 20px 2px 2px red; /*по горизонали, по вертикали, размытие, цвет тени.*/
     font-family: 'Taprom', cursive;
     font-weight: 700;
+    font-family: 'goma_cookie_g_cyrillicregular';
 }
