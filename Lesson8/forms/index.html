@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--Forms - Это структура, которая принимает данные и отправляет их на сервер, данные или возвращаются или остаются там.-->
+    <!--Атрибут accept-charset - принимает кодировку
+        action - ссылка на обработчик формы на сервере
+        autocomplete автодополнение введенных данных
+        enctype - формат отпрвки данных
+        method - принимает либо GET либо POST, мотод отправки данных
+        name
+        target - когда action не задан
+        novalidate - проверять поля или нет?
+        
+    -->
+    <form action="mailto:nickblack777@gmail.com" autocomplete="on" method="POST"
+     name="registration" target="_blank">
+          
+        <fieldset disabled name="contact"><!--disabled - Запрещает к вводу данных. name здесь, как айдишник.-->
+            <legend>Контактная информация</legend><!--Загаловок сгруппированных элементов-->
+            <input type="text" /><!--Выводит табличку на экран-->
+            <input type="text" />
+            <input type="text" />
+        </fieldset>
+        
+        <!--
+            input:
+            accept - он применяется к input только с типом type и передается тип принимаемых файлов.
+           
+            autofocus - берет в фокус при загрузке.
+
+            disabled - делает поле не активным.
+
+            formaction - переопределяет действие формы.
+
+        -->
+        <input type="file" accept=".doc, .pdf/*" />
+        <br>
+        <input type="file" accept="audio/*" />
+        <br>
+
+        <input type="text"autocomplete="on" />
+        <br>
+        <input type="text" name="name" pattern="[a-z]{3}" required size="30">
+        <br>
+        <!--size  принимают text searche tel url email password-->
+
+        <input type="file" autofocus="audio/*" multiple>
+        <br>
+
+        <input type="checkbox" checked>
+        <br>
+
+        <input type="radio">
+        <input type="radio">
+        <br>
+
+        <input type="image" src="L.png" alt="Фото" height="" width="">
+        <input type="submit" formaction="/send.php" formenctype="" formmethod="POST" formnovalidate>
+        <br>
+
+        <input type="number" min="0" max="100" step="10">
+        <br>
+
+        <input type="email" placeholder="Email" value="test@test.test" readonly>     
+        <br>
+        
+        <input type="password">
+        <br>
+
+        <input type="button" value="Посчитать"> 
+        <br>
+
+        <input type="color">
+        <br>
+
+        <input type="date">
+
+
+
+
+    </form>
+
+</body>
+</html>
