@@ -23,7 +23,7 @@
         
     -->
     <form action="mailto:nickblack777@gmail.com" autocomplete="on" method="POST"
-     name="registration" target="_blank">
+     name="registration" target="_blank" id="aaa2">
           
         <fieldset disabled name="contact"><!--disabled - Запрещает к вводу данных. name здесь, как айдишник.-->
             <legend>Контактная информация</legend><!--Загаловок сгруппированных элементов-->
@@ -85,6 +85,153 @@
         <br>
 
         <input type="date">
+        <br>
+
+        <!--9-й урок-->
+        <input type="datetime-local">
+        <!--Между датой и временем должна быть всегда большая буква "Т"*/-->
+        <br>
+
+        <input type="email" hiden> 
+        <!--Скрывает поле-->
+        <br>
+
+        <input type="month"><!--Выбирает месяца-->
+        <br>
+
+        <input type="range">
+        <input type="range" min=0>
+        <br>
+
+        <input type="reset"><!--Обнуляет все поля-->
+
+        <input type="search">
+        <br>
+
+        <input type="time">
+        <br>
+
+        <input type="url"><!--Предназначено для ссылок-->
+        <br>
+
+        <input type="week" value="" width="">
+        <input type="week" value="2018-w10">
+        <!--week - Выбирает недели. 
+        value - То где хранится имя, кроме файлов
+        width - ширина-->
+        <br>
+
+        <textarea>
+
+        </textarea>
+        <br>
+
+        <textarea rows="10" cols="4" form="aaa2" maxlength="10" placeholder="Введите текст" wrap="hard">
+            <!--Если wrap hard - отправляет точ в точ как введено, обязательнім условием является значение cols.-->
+            ыаываывавыавыа
+            ыаываывавыавыаывавыа
+            ываыва
+        </textarea>
+        <br>
+
+        <!--
+            autofocus
+            disabled
+            form
+            multiple - позволяет в списке выбирать несколько вариантов.
+            name
+            size - определяет сколько будет видно элементов.
+            label - упрощает название опшина.
+            value - хранаятся айдишники или значения.
+
+        -->
+        <select autofocus multiple name="brand" size="8">
+
+            <optgroup label="Марки телефонов">
+                    <option disabled>Apple</option>
+                    <option>LG</option>
+                    <option label="H">Huawei</option>
+            </optgroup>
+
+            <optgroup disabled label="Второе">
+                    <option value="">Apple</option>
+                    <option>LG</option>
+                    <option>Huawei</option>
+            </optgroup>
+
+        </select>
+
+        <br>
+
+        <label for="text2">Имя текста</label>
+        <input type="text" id="text2">
+
+        <br>
+
+        <label>
+            Имя текста
+            <input type="text" id="text2">
+        </label>
+
+        <br>
+
+        <!--
+            Принимает:
+            autofocus
+            disabled
+            form
+            formaction
+            formentype
+            type submit reset button
+        -->
+        <button>Какой-то текст</button><!--Отправляет как submit настроку формы-->
+        <button type="submit">Какой-то текст</button>
+
+        <br>
+
+        <label>
+            Чекбокс
+            <input type="checkbox">
+        </label>
+
+        <br>
+
+        <label>
+            Чекбокс1
+            <input type="radio" name="rad">
+        </label>
+
+        <label>
+            Чекбокс2
+            <input type="radio" name="rad">
+        </label>
+
+        <label>
+            Чекбокс3
+            <input type="radio" name="rad">
+        </label>
+
+        <br>
+
+        <label>
+            Чекбокс1
+            <input type="checkbox" name="rad1" value=""><!--В value - можем хранить любой текст, кроме двойных кавычек и наборот-->
+        </label>
+    
+        <label>
+            Чекбокс2
+            <input type="checkbox" name="rad1">
+        </label>
+    
+        <label>
+            Чекбокс3
+            <input type="checkbox" name="rad1">
+        </label>
+
+        
+
+        
+
 
 
 
