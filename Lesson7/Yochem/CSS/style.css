@@ -22,6 +22,37 @@ ul{
     box-sizing: border-box;
 }
 
+/* Функциональные классы */
+
+.float-l{
+    float: left;
+}
 
 /* Header */
 
+.header-logo{
+    width: 390px;
+}
+
+.header-address{
+    width: 310px;
+}
+
+.header-contact{
+    width: 335px;
+}
+
+.header-price{
+    width: 225px;
+}
+
+.header-top{
+    padding: 15px 0;
+}
+
+.header-top:after{
+    content: '';
+    display: block;
+    clear: both;
+    
+}
