@@ -1,0 +1,43 @@
+.icon{
+    
+    width: 200px;
+    height: 200px;
+    background: red;
+
+    /*
+    transition-property: width; /*all*/
+    /*
+    transition-duration: 3s;
+
+    ctransition-timing-function: ease-in-out;
+    transition-timing-function: easeInOutBack;
+
+    transition-delay: 2s;
+
+    transition: width 3s cubic-bezier(0.42, 0.82, 0.165, 1)
+    */
+
+    animation-name: shadow;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: reverse /* normal и alternate*/;
+}
+
+.icon:hover{
+    width: 1000px;
+
+    translate: translateX(20px);
+}
+
+@keyframes shadow{
+    form {box-shadow: 0 0 3px black;}
+    50% {box-shadow: 0 0 30px black;}
+    to {box-shadow: 0 0 3px black;}
+}
+
+@keyframes shadow{
+    0% {content: '0%'}
+    0% {content: '0%'}
+}
