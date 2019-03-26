@@ -1,0 +1,142 @@
+.box{
+    width: 1024px;
+    background-color: #000;
+    height: 1000px;
+    color: #fff;
+    margin: 0 auto;
+}
+
+/*
+@media (max-width: 600px){
+
+}
+
+
+@media screen and (max-width: 900px){
+    .box{
+        
+        background-color:orange;
+        
+    }
+}
+*/
+
+
+
+/*
+@media (min-width: 500px) and (max-width: 1400px){
+    .box{
+        
+        background-color:orange;
+        
+    }
+}
+
+@media (min-width: 500px), (max-width: 1400px){
+    .box{
+        
+        background-color:orange;
+        
+    }
+}
+*/
+
+
+
+/*
+@media (orientation: portrait), (max-width: 600px){
+    .box{
+        
+        background-color:orange;
+        
+    }
+}
+
+@media not all and (monochrome) {
+    
+}
+
+@media not all, (monochrome) {
+    
+}
+*/
+
+
+
+/*
+@media (width: 300px){
+
+}
+
+@media (max-width: 300px){
+    
+}
+
+@media (min-width: 300px){
+    
+}
+
+@media (min-height: 300px){
+    
+}
+*/
+
+
+
+/*
+@media (aspect-ratio: 300px){
+    
+}
+*/
+
+
+
+/*
+@media (orientation: landscape){
+    
+}
+*/
+
+
+
+/*
+@media (resolution: 300dpi), (orientation: landscape){
+
+}
+
+@media (min-resolution: 300dpi) {
+
+}
+
+*/
+
+
+
+/*
+@media (color){
+
+}
+
+@media (min-color: 4){
+
+}
+
+@media (max-color: 4){
+
+}
+*/
+
+
+
+/*
+@media (min-monochrome: 4){
+
+}
+*/
+
+
+
+@media (){
+    
+}
+
