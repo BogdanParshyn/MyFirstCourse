@@ -1,0 +1,444 @@
+/* Общие стили */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&subset=cyrillic');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: Montserrat, sans-serif;
+    color: #ffffff;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover{
+    color: darkgrey;
+}
+
+
+li {
+    list-style: none;
+}
+
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.float {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Стили header */
+
+.logo {
+    margin: 15px 95px 16px 0;
+}
+
+nav {
+    margin: 37px 45px 39px 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li:not(:last-child) {
+    padding-right: 43px;
+    height: 20px;
+}
+
+.social-resources {
+    margin: 35px 27px 36px 0;
+}
+
+.social-resources ul li {
+    float: left;
+    padding: 0 15px;
+}
+
+.social-resources ul li:first-child {
+    padding-left: 0;
+}
+
+.social-resources ul li:last-child {
+    padding-right: 0;
+}
+
+.social-resources ul li:not(:last-child) {
+    border-right: 1px solid #3a3a3a;
+}
+
+.discription {
+    margin: 25px 0 26px;
+}
+
+.telephopne {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.schedule {
+    font-size: 13px;
+    font-weight: 500;
+    text-align: right;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
+/* slider */
+
+.slider {
+    background-image: url(./img/vider.jpg);
+    /* background-repeat: no-repeat; */
+    background-position: center center;
+}
+
+.circle {
+    width: 427px;
+    height: 427px;
+    border-radius: 50%;
+    box-shadow: 2px 4px 55px rgba(243, 33, 33, 0.64);
+    background-color: #f32121;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top: 89px;
+}
+
+.slider-food {
+    font-size: 36px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-top: 111px;
+}
+
+.slider-action {
+    font-size: 46px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-top: 32px;
+}
+
+.flay {
+    position: relative;
+    height: 642px;
+}
+
+.flay img {
+    position: absolute;
+}
+
+.sushi-top-right {
+    top: 61px;
+    right: -51px;
+    z-index: 1;
+}
+
+.sushi-right {
+    z-index: 1;
+    top: 90px;
+    right: -56px;
+}
+
+.sushi-left {
+    z-index: 1;
+    top: 45px;
+    left: -255px;
+}
+
+.sheet-bottom {
+    z-index: 1;
+    top: 555px;
+    left: 525px;
+}
+
+.sheet-top {
+    z-index: 1;
+    top: 81px;
+    left: 184px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
+/* main */
+
+main {
+    background: url(./img/1_Титульный_лист.png) no-repeat, url(./img/bg2.png) no-repeat right top, url(./img/bg3.png) no-repeat left bottom, url(./img/Ксюха.png) no-repeat bottom right;
+}
+
+.slogan-order {
+    padding: 108px 329px 37px 334px;
+    text-align: center;
+}
+
+.order {
+    font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 27px;
+}
+
+.order-action {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.menu {
+    width: 1170px;
+}
+
+.menu section {
+    float: left;
+    width: 234px;
+    height: 360px;
+    border: 1px solid #323232;
+    position: relative;
+}
+
+.menu section:hover {
+    background-color: #0f0f0f;
+}
+
+.menu section div {
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.menu section a {
+    display: block;
+    width: 197px;
+    height: 54px;
+    box-shadow: 2px 4px 24px rgba(243, 33, 33, 0.64);
+    border-radius: 27px;
+    background-color: #f32121;
+    margin: 0 17px 0 19px;
+    position: absolute;
+    bottom: -30px;
+    padding: 20px 0 19px 35px;
+    font-size: 15px;
+    font-weight: 500;
+    z-index: 1;
+}
+
+.menu section a::after {
+    padding-left: 9px;
+    content: url(./img/знак.png);
+}
+
+.menu section:nth-child(n+2):nth-child(-n+5) {
+    border-left: none;
+}
+
+.menu section:nth-child(n+7):nth-child(-n+10) {
+    border-left: none;
+}
+
+.menu section:nth-child(n+6):nth-child(-n+10) {
+    border-top: none;
+}
+
+.menu section:nth-child(n+6):nth-child(-n+10) {
+    height: 389px;
+}
+
+/* блюда */
+
+.dish1 img {
+    margin: 96px 25px 38px 12px;
+}
+
+.dish2 img {
+    margin: 98px 14px 0px 14px;
+}
+
+.dish3 img {
+    margin: 97px 15px 26px 14px;
+}
+
+.dish4 img {
+    margin: 125px 12px 50px 12px;
+}
+
+.dish5 img {
+    margin: 125px 12px 50px 12px;
+}
+
+.dish6 img {
+    margin: 124px 1px 50px 1px;
+}
+
+.dish7 img {
+    margin: 125px 0 69px 0;
+}
+
+.dish8 img {
+    margin: 103px 8px 41px 8px;
+}
+
+.dish9 img {
+    margin: 119px 0 50px 0;
+}
+
+.dish10 img {
+    margin: 154px 12px 50px 12px;
+}
+
+/*------------------------------ */
+
+.news article h1 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.news h2 {
+    font-size: 42px;
+    font-weight: 300;
+    margin-top: 151px;
+    text-align: center;
+}
+
+.news p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.news-wrapper {
+    margin-top: 83px;
+    display: inline-block;
+    margin-bottom: 254px;
+}
+
+.news-1 {
+    max-width: 570px;
+    margin-right: 31px;
+}
+
+.news-1 h1 {
+    margin-top: 21px;
+}
+
+.news article time {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 15px;
+}
+
+.news-1 p{
+    margin-bottom: 16px;
+}
+
+.news article a {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    width: 151px;
+    height: 41px;
+    box-shadow: 2px 4px 24px rgba(243, 33, 33, 0.64);
+    border-radius: 21px;
+    background-color: #f32121;
+    padding: 10px 35px 14px 36px;
+    
+}
+
+.fa-calendar-alt {
+    padding-right: 6px;
+}
+
+.news-2 {
+    margin-top: -12px;
+}
+.news-2 img{
+    margin-right: 31px;
+}
+
+.news-2 a{
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+.news-3 img{
+margin-right: 33px;
+}
+.news-3 a{
+    margin-top: 20px;
+}
+.news-container{
+    min-width: 545px;
+}
+
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
+/* footer */
+
+footer {
+    background-color: #282828;
+}
+
+.logo-footer {
+    margin: 50px 261px 90px 0;
+}
+
+.contacts-footer {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 50px 297px 22px 0;
+    text-align: center;
+}
+
+.social-resources-footer {
+    margin: 0 39px 0 40px;
+}
+
+.social-resources-footer ul li {
+    float: left;
+    padding: 0 15px;
+}
+
+.social-resources-footer ul li:first-child {
+    padding-left: 0;
+}
+
+.social-resources-footer ul li:last-child {
+    padding-right: 0;
+}
+
+.social-resources-footer ul li:not(:last-child) {
+    border-right: 1px solid #3a3a3a;
+    height: 20px;
+}
+
+.telephone-footer {
+    margin: 51px 0 104px 0;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
+}
+footer address{
+    font-style: normal;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
