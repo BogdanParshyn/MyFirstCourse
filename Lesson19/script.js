@@ -2,7 +2,7 @@
 
 var х = 1;
 
-switch (x) {
+switch(x){
     case 1: 
         console.log('Верно');
         break;
