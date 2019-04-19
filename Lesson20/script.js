@@ -185,7 +185,7 @@ console.log(number.toLocaleString());
 \r - абзац
 \t - tab
 
-*/
+
 
 alert('привет \n  Андрей');
 
@@ -201,3 +201,24 @@ var str = 'ПроГраммирование';
 console.log(str.charAt(3)); // если нет значения, то пустая строка.
 
 console.log(str[3]); // если нет значения, андефайнт.
+*/
+
+
+
+function ask(question, yes, no) {
+    if (confirm(question)) yes()
+    else no();
+  }
+
+function showOk() {
+  alert( "Вы согласились." );
+}
+
+function showCancel() {
+  alert( "Вы отменили выполнение." );
+}
+
+// использование
+ask("Вы согласны?", showOk, showCancel);
+
+
