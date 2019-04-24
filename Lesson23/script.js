@@ -170,6 +170,7 @@ function makeCounter(){
 
     // lexical = currentCount = 1
     return function(){
+        console.log("function");
         return currentCount++;
     }
 }
